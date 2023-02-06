@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--I really struggled with the javascript and needed to watch the solution video to make sense of the flow-->
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+                document.addEventListener('DOMContentLoaded', function() {
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                let incorrect = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrect.length; i++) {
+                    incorrect[i].addEventListener('click', function() {
+                        incorrect[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                    });
+                }
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('#input');
+                    if (input.value === 'Two' || input.value === 'two' || input.value === '2') {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    }
+                    else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>What was the first manned mission of NASA?</h3>
+
+                <button class="incorrect">PQS-5</button>
+                <button class="correct">STS-1</button>
+                <button class="incorrect">Apollo-Soyuz</button>
+                <button class="incorrect">Bell X-1</button>
+
+                <p id="feedback1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>How many space stations are there in the world?</h3>
+
+                <input id="input" type="text">
+                <input id="check" type="submit" value="Confirm">
+
+                <p id="feedback2"></p>
+
+            </div>
+        </div>
+    </body>
+</html>

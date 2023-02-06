@@ -1,0 +1,38 @@
+/* Regime */
+
+/* Format Accordion Tab text*/
+.txt2 {
+    color: white;
+    font: bold 1.0em "Times New Roman", Times, serif;
+}
+
+/* Format Accordion body text*/
+.txt3 {
+    color: white;
+    font: bold 2.0em "Times New Roman", Times, serif;
+}
+
+/* Set Picture Properties */
+.pic {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add picture to first accordion */
+.diving {
+    background-image: url('/images/diving.jpg');
+}
+
+/* Add picture to second accordion */
+.flying {
+    background-image: url('/images/flying.jpg');
+}
+
+/* Add picture to third accordion */
+.language {
+    background-image: url('/images/language.jpg');
+}

@@ -1,0 +1,21 @@
+/* Overview */
+
+/* Add cover image to page */
+.cover {
+    background-image: url('/images/astro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Format text and position in a "box" */
+#box {
+    color: #E8E7E7;
+    font: bold 1.8em "Times New Roman", Times, serif;
+    margin: 50px 50px;
+    text-align:left;
+    inline-size: 600px;
+    overflow: hidden;
+}

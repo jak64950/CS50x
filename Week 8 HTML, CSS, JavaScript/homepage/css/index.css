@@ -1,0 +1,40 @@
+/* Index */
+
+/* Cover Image */
+img {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Format Footer*/
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+}
+
+/* Format Body Text */
+.txt1 {
+    color: black;
+    font: bold 3.0em "Times New Roman", Times, serif;
+    text-align:center;
+    background-color: orange;
+}
+
+/* Format Left Footer Text */
+#footleft {
+    color: orange;
+    float: left;
+    width: 35%;
+    text-align: left;
+}
+
+/* Format Right Footer Text */
+#footright {
+    color: orange;
+    float: right;
+    width: 65%;
+    text-align: justify;
+}
