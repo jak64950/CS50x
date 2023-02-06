@@ -1,0 +1,1 @@
+SELECT songs.name FROM songs LEFT JOIN artists ON artists.id = songs.artist_id WHERE artists.name = "Post Malone";
