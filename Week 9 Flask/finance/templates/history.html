@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="text-start">Action</th>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for id,value in trans.items() %}
+            <tr>
+                <td class="text-start">{{ value[0] }}</td>
+                <td class="text-start">{{ value[1] }}</td>
+                <td class="text-end">{{ value[2] }}</td>
+                <td class="text-end">{{ value[3] }}</td>
+                <td class="text-end">{{ value[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
